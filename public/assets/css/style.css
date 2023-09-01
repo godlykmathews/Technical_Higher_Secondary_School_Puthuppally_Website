@@ -1055,6 +1055,32 @@ section {
     width: 100%;
   }
 
+  /*Video Gallery Container*/
+  .center-container {
+    display: flex;
+    justify-content: space-between; /* Horizontal alignment for desktop */
+    align-items: center;
+    flex-direction: row; /* Videos side by side on desktop */
+    text-align: center;
+    flex-wrap: wrap; /* Allow items to wrap to next line on smaller screens */
+  }
+  
+  .col-lg-5 {
+    width: 48%; /* Adjust the width as needed for spacing between videos */
+    margin-bottom: 20px; /* Add some space between videos */
+  }
+  
+  @media (max-width: 767px) {
+    .center-container {
+      flex-direction: column; /* Stack videos vertically on mobile */
+    }
+  
+    .col-lg-5 {
+      width: 100%; /* Full width for mobile */
+    }
+  }
+  
+  
 
 /*--------------------------------------------------------------
 # Contact
@@ -1161,18 +1187,25 @@ section {
   }
 
 
-/*Alumni Page*/
+/* Alumni Page */
 .alumni-page {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0, 0, 255, 0.5)),url("../img/alumnibackground.png");
-  background-size: cover; 
-  background-position: center center; 
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(117, 78, 201, 0.5)), url("../img/alumnibackground.png");
+  background-size: cover;
+  background-position: center top;
   background-repeat: no-repeat;
   color: #fff;
-}
-.alumni-page h2 {
-  font-size: 36px; /* Example style for headings */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.alumni-page p {
-  font-size: 18px; /* Example style for paragraphs */
+
+.alumni-page .container {
+  padding: 20px; 
+  flex-grow: 1;
+}
+
+.alumni-page iframe {
+  width: 100%;
+  border: none;
 }
