@@ -1209,3 +1209,11 @@ section {
   width: 100%;
   border: none;
 }
+
+.update-message {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
