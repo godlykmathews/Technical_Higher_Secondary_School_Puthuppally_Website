@@ -6,6 +6,9 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+main{
+  flex-grow: 1;
+}
 
 a {
   color: #34b7a7;
@@ -1155,6 +1158,7 @@ section {
 /*--------------------------------------------------------------
 # Footer Social Links
 --------------------------------------------------------------*/
+
 .footer-social-links {
   padding-right: 15px;
 }
