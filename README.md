@@ -5,4 +5,4 @@ Developer Info: [Godly K Mathews](godlykmathews.github.io)
 
 >Visit :
 >[Current version ](http://thssputhuppally.ihrd.ac.in/)
- [Development version](https://thssputhuppally.cyclic.app/)https://thssputhuppally.cyclic.app/
+ [Development version](https://thssputhuppally.cyclic.app/)
